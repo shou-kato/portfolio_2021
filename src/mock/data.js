@@ -10,7 +10,6 @@ export const headData = {
 // HERO DATA
 export const heroData = {
   title: 'Sho Kato Portfolio',
-  cta: '',
 };
 
 // ABOUT DATA
