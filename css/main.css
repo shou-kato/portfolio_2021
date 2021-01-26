@@ -1,0 +1,45 @@
+* { 
+    margin: 0px; 
+    padding: 0px; 
+    color: #2b2b2b;
+}
+
+.main {
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 70px;
+}
+
+header {
+  background-color: #98fb98;
+  margin-bottom: 60px;
+  padding: 10px 10px;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+.main_content p {
+  margin-top: 20px;
+  font-size: 16px;
+  word-wrap: break-word;
+}
+
+.main_content h3 {
+  font-size: 20px; 
+  margin-top: 30px;
+}
+
+footer {
+ background-color: #98fb98;
+ margin-top: 40px;
+ padding: 12px;
+}
+footer p {
+  text-align: center;
+  font-size: 16px;
+}
