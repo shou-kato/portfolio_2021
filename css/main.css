@@ -4,13 +4,7 @@
   color: #2b2b2b;
 }
 
-@font-face {
-	font-family: 'MyFont';
-	src: url('../fonts/nicomoji-plus_1.11.ttf');
-}
-
 body {
-  font-family: myFont;
   background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 }
 
