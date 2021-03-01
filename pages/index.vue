@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <img src="@/assets/top-logo.png" alt="">
+    <img width="400" height="400" src="@/assets/png/top-logo.png" alt="">
     <h1>Kato Sho</h1>
     <h2>よろしくねー</h2>
   </div>
@@ -28,13 +28,15 @@ export default {}
   font-size: 32px;
 }
 
-.container img {
-  width: 300px;
-}
+@media screen and (max-width: 950px) {
 
-@media (max-width: 959px) {
+  .container {
+    margin-top: 200px;
+  }
+
   .container img {
-    width: 150px;
+    width: 200px;
+    height:200px;
   }
 }
 </style>

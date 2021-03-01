@@ -24,7 +24,18 @@
 a {
   font-size: 28px;
   color: #223D5F;
-  text-decoration: none;
   padding: 0 15px
+}
+
+@media screen and (max-width: 950px) {
+/* 1024pxまでの幅の場合に適応される */
+  a {
+    font-size: 20px;
+  }
+
+  .header {
+    margin: 20px auto;
+    text-align: center;
+  }
 }
 </style>
