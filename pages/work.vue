@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div v-for="(item, index) in workContents" :key="index">
+    <div v-for="(item, index) in workContents" :key="index" class="work-wrapper">
       <h3>{{ item.title }}</h3>
       <p>{{ item.details }}</p>
 
@@ -9,7 +9,6 @@
 
       <h4>フレームワーク</h4>
       <p>{{ item.fw }}</p>
-      <!-- <img src="@/assets/top-logo.png" alt=""> -->
     </div>
   </div>
 </template>
@@ -31,11 +30,31 @@ export default {
 <style scoped>
 .container {
   margin: 0 auto;
+  width: 1400px;
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+}
+
+.work-wrapper {
+  margin-top: 100px;
+  padding: 100px;
+  width: 550px;
+  border: solid black;
+  border-radius: 20px;
+}
+
+.container h3, h4, p {
+  color: #223D5F;
+
+}
+
+.container h3 {
+  font-size: 30px;
 }
 
 .container p {
   padding-top: 15px;
-  color: #223D5F;
   font-size: 18px;
   font-weight: bold;
 }
