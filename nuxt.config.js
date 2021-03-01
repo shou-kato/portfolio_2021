@@ -32,8 +32,16 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/google-analytics'
   ],
+
+  googleAnalytics: {
+    id: 'G-0LNPN0JHVW',
+    autoTracking: {
+      screenview: true
+    }
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

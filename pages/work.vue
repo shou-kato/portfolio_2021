@@ -1,44 +1,30 @@
 <template>
   <div class="container">
-    <!-- <p>reverse</p> -->
     <div v-for="(item, index) in workContents" :key="index">
       <h3>{{ item.title }}</h3>
-      <p>{{ item.subTitle }}</p>
-      <img src="@/assets/top-logo.png" alt="">
+      <p>{{ item.details }}</p>
+
+      <h4>言語</h4>
+      <p>{{ item.language }}</p>
+
+      <h4>フレームワーク</h4>
+      <p>{{ item.fw }}</p>
+      <!-- <img src="@/assets/top-logo.png" alt=""> -->
     </div>
-    <!-- <p>Online reverse</p> -->
-    <!-- <p>bbs</p> -->
-    <!-- <p>web小説ランキング可視化サイト</p> -->
   </div>
 </template>
 <script>
 export default {
   data () {
     return {
-      workContents: [
-        {
-          gitHubUrl: null,
-          title: 'reverse',
-          subTitle: 'reverse',
-          language: ''
-        },
-        {
-          gitHubUrl: null,
-          title: 'online reverse',
-          subTitle: 'reverse',
-          language: ''
-        },
-        {
-          gitHubUrl: null,
-          title: 'online reverse',
-          subTitle: 'reverse',
-          language: ''
-        }
-      ]
+      workContents: []
     }
   },
-  mounted () {
-
+  async created () {
+    const res = await this.$axios.get('https://sho19n110.microcms.io/api/v1/news'
+    )
+    const resData = res.data.contents
+    this.workContents = resData
   }
 }
 </script>
