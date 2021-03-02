@@ -1,6 +1,7 @@
 # portfolio
+加藤翔のポートフォリオ
 
-## Build Setup
+http://www.sho19n110.com/
 
 ```bash
 # install dependencies
@@ -17,4 +18,3 @@ $ yarn start
 $ yarn generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
