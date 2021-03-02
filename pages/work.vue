@@ -1,14 +1,16 @@
 <template>
   <div class="container">
     <div v-for="(item, index) in workContents" :key="index" class="work-wrapper">
-      <h3>{{ item.title }}</h3>
-      <p>{{ item.details }}</p>
+      <a :href="item.url">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.details }}</p>
 
-      <h4>言語</h4>
-      <p>{{ item.language }}</p>
+        <h4>言語</h4>
+        <p>{{ item.language }}</p>
 
-      <h4>フレームワーク</h4>
-      <p>{{ item.fw }}</p>
+        <h4>フレームワーク</h4>
+        <p>{{ item.fw }}</p>
+      </a>
     </div>
   </div>
 </template>
@@ -20,8 +22,8 @@ export default {
     }
   },
   async created () {
-    const res = await this.$axios.get('https://sho19n110.microcms.io/api/v1/news'
-    )
+    const res = await this.$axios.get('https://sho19n110.microcms.io/api/v1/news',
+      { headers: { 'X-API-KEY': '823cd8fd-4080-4f78-aaee-6a3ea7ae8178' } })
     const resData = res.data.contents
     this.workContents = resData
   }
@@ -29,24 +31,36 @@ export default {
 </script>
 <style scoped>
 .container {
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 1400px;
- display: flex;
- justify-content: space-between;
- flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .work-wrapper {
-  margin-top: 100px;
-  padding: 100px;
   width: 550px;
+  padding: 60px;
+  margin-bottom: 100px;
+  cursor: pointer;
   border: solid black;
   border-radius: 20px;
+  transition: box-shadow 600ms cubic-bezier(0.33, 0.11, 0.02, 0.99),
+    transform 600ms cubic-bezier(0.33, 0.11, 0.02, 0.99);
+}
+
+.work-wrapper:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1),
+    0 1px 6px rgba(0, 0, 0, 0.05),
+    0 8px 8px rgba(0, 0, 0, 0.1),
+    0 16px 16px rgba(0, 0, 0, 0.1),
+    8px 32px 32px rgba(0, 0, 0, 0.15),
+    8px 64px 64px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05) translateY(-0.5rem);
 }
 
 .container h3, h4, p {
   color: #223D5F;
-
 }
 
 .container h3 {
@@ -57,5 +71,18 @@ export default {
   padding-top: 15px;
   font-size: 18px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 950px) {
+
+  .container {
+    display: block;
+    width: auto;
+  }
+
+  .work-wrapper {
+    width: 80%;
+    margin: 100px auto;
+  }
 }
 </style>

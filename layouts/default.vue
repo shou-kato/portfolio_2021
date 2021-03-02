@@ -5,7 +5,7 @@
   </div>
 </template>
 <script>
-import HeaderLink from '@/components/header_link.vue'
+import HeaderLink from '@/components/header-link.vue'
 export default {
   components: {
     HeaderLink
@@ -14,6 +14,8 @@ export default {
 </script>
 <style>
 html {
+  box-sizing: border-box;
+  overflow-y:scroll;
   font-family:
     'Source Sans Pro',
     -apple-system,
@@ -29,12 +31,11 @@ html {
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-  overflow-y:scroll;
 }
 
 body {
   background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+
   /* 画像をタイル状に繰り返し表示しない */
   background-repeat: no-repeat;
 

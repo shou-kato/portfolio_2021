@@ -8,19 +8,20 @@
 </template>
 <style scoped>
 .container {
-  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
 }
 
 .container h3 {
-  font-size: 22px;
+  font-size: 28px;
 }
 
 .container p {
-  font-size: 18px;
+  font-size: 22px;
 }
 
-.container h3, p {
+.container h3, .container p {
+  padding-top: 30px;
   color: #35495e;
-  padding-top: 15px;
 }
 </style>
