@@ -3,6 +3,11 @@ export default {
   ssr: false,
   target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
+
+  router: {
+    base: '/portfolio_2021/'
+
+  },
   head: {
     title: 'sho kato portfolio',
     htmlAttrs: {
