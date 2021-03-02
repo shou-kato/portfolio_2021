@@ -1,12 +1,17 @@
+const environment = process.env.NODE_ENV || 'local'
+const env = require(`./env/${environment}.js`)
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
+  router: {
+    base: env.BASE_URL
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'sho kato portfolio',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ja'
     },
     meta: [
       { charset: 'utf-8' },
