@@ -27,7 +27,7 @@ export default {}
 }
 
 .container h1, h2 {
-  padding-top: 20px;
+  padding-top: 40px;
   color: #223D5F;
 }
 
