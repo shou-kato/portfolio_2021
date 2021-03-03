@@ -30,6 +30,11 @@ export default {
 }
 </script>
 <style scoped>
+
+a {
+  display: block;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
