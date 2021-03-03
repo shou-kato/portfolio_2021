@@ -33,15 +33,8 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/pwa'
   ],
-
-  googleAnalytics: {
-    id: 'G-0LNPN0JHVW',
-    autoTracking: {
-      screenview: true
-    }
-  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
