@@ -56,13 +56,22 @@
   .container {
     display: block;
     width: auto;
+    margin-top: 40px;
   }
 
+  .container h2 {
+    padding-top: 40px;
+  }
   .work-wrapper {
     width: auto;
     padding: 0;
-    margin: auto;
+    margin: 0 40px;
     text-align: center;
+  }
+
+  .work-wrapper img {
+    width: 200px;
+    height:200px;
   }
 }
 </style>
