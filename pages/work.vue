@@ -77,10 +77,21 @@ export default {
   .container {
     display: block;
     width: auto;
+    margin: 0;
+  }
+
+  .container h3 {
+    font-size: 24px;
+  }
+
+  .container p {
+    font-size: 12px;
+    font-weight: bold;
   }
 
   .work-wrapper {
-    width: 80%;
+    width: 80vw;
+    padding: 40px;
     margin: 100px auto;
   }
 }
