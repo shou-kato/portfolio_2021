@@ -2,8 +2,7 @@
   <div class="container">
     <div>
       <img width="400" height="400" src="@/assets/webp/top-logo.webp" alt="">
-      <h1>Kato Sho</h1>
-      <h2>よろしくねー</h2>
+      <h1>Hello World✋</h1>
     </div>
   </div>
 </template>
