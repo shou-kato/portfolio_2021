@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <div class="work-wrapper">
-        <img width="400" height="400" class="profile_logo" src="@/assets/png/top-logo.png" alt="">
+        <img width="400" height="400" class="profile_logo" src="@/assets/webp/top-logo.webp" alt="">
       </div>
 
       <div class="work-wrapper">

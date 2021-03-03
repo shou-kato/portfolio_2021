@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <img width="400" height="400" src="@/assets/png/top-logo.png" alt="">
+    <img width="400" height="400" src="@/assets/webp/top-logo.webp" alt="">
     <h1>Kato Sho</h1>
     <h2>よろしくねー</h2>
   </div>
