@@ -8,7 +8,7 @@
 </template>
 <style scoped>
 .container {
-  margin-top: 40px;
+  margin: 100px 30px 0 30px;
   text-align: center;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .container h3, .container p {
-  padding-top: 30px;
+  padding-bottom: 30px;
   color: #35495e;
 }
 </style>

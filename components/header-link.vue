@@ -16,9 +16,7 @@
 </template>
 <style scoped>
 .header {
-  margin-top: 20px;
-  margin-right: 100px;
-  margin-bottom: 150px;
+  margin-top: 30px;
   text-align: right;
 }
 a {
@@ -34,7 +32,7 @@ a {
   }
 
   .header {
-    margin: 20px auto;
+    /* margin: 20px auto; */
     text-align: center;
   }
 }

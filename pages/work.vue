@@ -34,8 +34,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 1400px;
-  margin: 0 auto;
+  margin: 40px 60px 0 60px;
 }
 
 .work-wrapper {

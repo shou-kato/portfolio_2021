@@ -1,8 +1,10 @@
 <template>
   <div class="container">
-    <img width="400" height="400" src="@/assets/webp/top-logo.webp" alt="">
-    <h1>Kato Sho</h1>
-    <h2>よろしくねー</h2>
+    <div>
+      <img width="400" height="400" src="@/assets/webp/top-logo.webp" alt="">
+      <h1>Kato Sho</h1>
+      <h2>よろしくねー</h2>
+    </div>
   </div>
 </template>
 
@@ -12,9 +14,18 @@ export default {}
 
 <style scoped>
 .container {
-  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 100vh;
+  grid-template-columns: 100vw;
+  line-height: 1.5em;
+}
+
+.container div {
+  align-self: center;
+  justify-self: center;
   text-align: center;
 }
+
 .container h1, h2 {
   padding-top: 20px;
   color: #223D5F;
@@ -29,14 +40,9 @@ export default {}
 }
 
 @media screen and (max-width: 950px) {
-
-  .container {
-    margin-top: 200px;
-  }
-
   .container img {
-    width: 200px;
-    height:200px;
+    width:  250px;
+    height: 250px;
   }
 }
 </style>

@@ -12,7 +12,7 @@
         <p>株式会社CYMESにてフロントエンドの開発のインターンを行う(2019年 9月 ~ 2021年 1月)</p>
       </div>
     </div>
-    <a href="https://github.com/shou-kato"><img class="sns-icon" width="100" height="100" src="@/assets/png/GitHub-Mark-120px-plus.png" alt=""></a>
+    <a href="https://github.com/shou-kato"><img class="sns-icon" width="100" height="100" src="@/assets/webp/GitHub-Mark-120px-plus.webp" alt=""></a>
   </div>
 </template>
 <style scoped>
@@ -20,7 +20,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 1400px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -56,7 +56,7 @@
   .container {
     display: block;
     width: auto;
-    margin-top: 40px;
+    margin: 100px 30px 0 30px;
   }
 
   .container h2 {
@@ -65,7 +65,7 @@
   .work-wrapper {
     width: auto;
     padding: 0;
-    margin: 0 40px;
+    margin: 0 auto;
     text-align: center;
   }
 
