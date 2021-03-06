@@ -79,6 +79,7 @@ a {
   padding-top: 15px;
   font-size: 18px;
   font-weight: bold;
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 950px) {

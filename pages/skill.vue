@@ -18,6 +18,7 @@
 
 .container p {
   font-size: 22px;
+  line-height: 1.5;
 }
 
 .container h3, .container p {

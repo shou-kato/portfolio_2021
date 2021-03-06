@@ -37,6 +37,7 @@
 .container p {
   font-size: 18px;
   font-weight: bold;
+  line-height: 1.5;
 }
 
 .work-wrapper {
