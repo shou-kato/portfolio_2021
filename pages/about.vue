@@ -9,7 +9,7 @@
         <h2>Kato Sho</h2>
         <p>2003年生まれ</p>
         <p>N高等学校入学後はWebプログラミングを始める</p>
-        <p>株式会社CYMESにてフロントエンドの開発のインターンを行う(2019年 9月 ~ 2021年 1月)</p>
+        <p>株式会社CYMESにてフロントエンド開発のインターンを行う(2019年 9月 ~ 2021年 1月)</p>
       </div>
     </div>
     <a href="https://github.com/shou-kato"><img class="sns-icon" width="100" height="100" src="@/assets/webp/GitHub-Mark-120px-plus.webp" alt=""></a>
