@@ -43,9 +43,9 @@ a {
 }
 
 .work-wrapper {
-  width: 550px;
+  width: 450px;
   padding: 60px;
-  margin-bottom: 100px;
+  margin: 0 20px 100px 20px;
   cursor: pointer;
   border: solid black;
   border-radius: 20px;
@@ -82,7 +82,7 @@ a {
   line-height: 1.5;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1200px) {
 
   .container {
     display: block;
@@ -100,7 +100,7 @@ a {
   }
 
   .work-wrapper {
-    width: 80vw;
+    width: 60vw;
     padding: 40px;
     margin: 100px auto;
   }
