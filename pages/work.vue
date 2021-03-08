@@ -51,7 +51,6 @@ a {
   border: solid black;
   border-radius: 20px;
   transition: all 1s ease-out;
-  transition: width 1s ease-in-out 0.01s;
   transition: box-shadow 600ms cubic-bezier(0.33, 0.11, 0.02, 0.99),
     transform 600ms cubic-bezier(0.33, 0.11, 0.02, 0.99);
 }
