@@ -18,19 +18,29 @@
 export default {
   data () {
     return {
-      workContents: []
+      workContents: [
+        {
+          title: '',
+          url: '',
+          details: '',
+          language: '',
+          fw: ''
+        }
+      ]
     }
   },
   async created () {
-    const res = await this.$axios.get('https://sho19n110.microcms.io/api/v1/news',
-      { headers: { 'X-API-KEY': '823cd8fd-4080-4f78-aaee-6a3ea7ae8178' } })
-    const resData = res.data.contents
-    this.workContents = resData
+    try {
+      const res = await this.$axios.get('https://sho19n110.microcms.io/api/v1/news',
+        { headers: { 'X-API-KEY': '823cd8fd-4080-4f78-aaee-6a3ea7ae8178' } })
+      this.workContents = res.data.contents
+    } catch (err) {
+      console.error(err)
+    }
   }
 }
 </script>
 <style scoped>
-
 a {
   display: block;
 }
