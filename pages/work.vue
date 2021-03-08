@@ -44,11 +44,14 @@ a {
 
 .work-wrapper {
   width: 450px;
+  height: 420px;
   padding: 60px;
   margin: 0 20px 100px 20px;
   cursor: pointer;
   border: solid black;
   border-radius: 20px;
+  transition: all 1s ease-out;
+  transition: width 1s ease-in-out 0.01s;
   transition: box-shadow 600ms cubic-bezier(0.33, 0.11, 0.02, 0.99),
     transform 600ms cubic-bezier(0.33, 0.11, 0.02, 0.99);
 }
@@ -64,25 +67,50 @@ a {
 }
 
 .container h3, h4, p {
+  margin: 10px 0;
   color: #223D5F;
 }
 
 .container h3 {
-  font-size: 30px;
-}
-
-.container h4 {
-  margin-top: 30px;
+  font-size: 28px;
 }
 
 .container p {
-  padding-top: 15px;
-  font-size: 18px;
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: 20px;
   font-weight: bold;
   line-height: 1.5;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 
 @media screen and (max-width: 1200px) {
+  .work-wrapper {
+    width: 350px;
+    height: 320px;
+    transition: all 1s ease-out;
+  }
+
+  .container h3 {
+    font-size: 18px;
+  }
+  .container h4 {
+    font-size: 16px;
+  }
+
+  .container p {
+    display: -webkit-box;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: bold;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
 
   .container {
     display: block;
@@ -91,18 +119,35 @@ a {
   }
 
   .container h3 {
-    font-size: 24px;
+    font-size: 16px;
+  }
+  .container h4 {
+    font-size: 14px;
   }
 
   .container p {
+    display: -webkit-box;
+    overflow: hidden;
     font-size: 12px;
     font-weight: bold;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
   }
 
   .work-wrapper {
-    width: 60vw;
-    padding: 40px;
+    width: 400px;
+    height: 240px;
+    padding: 30px;
     margin: 100px auto;
+    transition: all 1s ease-out;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .work-wrapper {
+    width: 260px;
+    height: 240px;
+    transition: all 1s ease-out;
   }
 }
 </style>
